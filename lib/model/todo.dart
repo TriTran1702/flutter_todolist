@@ -6,6 +6,7 @@ class Todo{
     _id = id;
     _content = content;
   }
+  // ignore: unnecessary_getters_setters
   String get content => _content;
   set content (String value){
     _content = value;

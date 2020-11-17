@@ -20,6 +20,7 @@ class TodoHeader extends StatelessWidget{
         SizedBox(width: 20,),
         RaisedButton.icon(onPressed: (){
           bloc.event.add(AddTodoEvent(txtToDoController.text));
+          print('ok ok ok');
         },
           icon: Icon(Icons.add),
           label: Text("Add"),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todolist/bloc/todo_bloc.dart';
 import 'package:flutter_todolist/model/todo.dart';
-import 'todo_list_cont.dart';
-import 'todo_header.dart';
-import 'todo_list.dart';
+import 'todo/todo_list_cont.dart';
+import 'todo/todo_header.dart';
+import 'todo/todo_list.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter ',
       theme: ThemeData(
                primarySwatch: Colors.blue,
       ),

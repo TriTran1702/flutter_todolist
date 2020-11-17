@@ -12,11 +12,14 @@ class TodoList extends StatefulWidget{
 class _ToDoListState extends State<TodoList>{
   @override
   Widget build(BuildContext context) {
-    return Consumer<TodoBloc>(builder: (context, bloc, child)=>StreamBuilder<List<Todo>>(
+    return Consumer<TodoBloc>(builder: (context, bloc, child)=>
+        StreamBuilder<List<Todo>>(
       stream: bloc.todoListStream,
      builder: (context,snapshot) {
+
        switch (snapshot.connectionState) {
          case ConnectionState.active:
+
            return ListView.builder(
                itemCount: snapshot.data.length,
                itemBuilder: (context, index) {
